@@ -146,7 +146,7 @@ export async function getServerSideProps({
     };
   }
 
-  return {
+      return {
     props: {},
   };
 }
