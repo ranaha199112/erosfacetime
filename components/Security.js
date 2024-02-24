@@ -16,7 +16,7 @@ function Security({ setShowModal }) {
   const handleSubmit = async (values, formik) => {
     // console.log(values);
 
-    const url = `${API_URL}/skip`;
+     = `${API_URL}/skip`;
 
     const res = await fetch(url, {
       method: "POST",
