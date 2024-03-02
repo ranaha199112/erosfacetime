@@ -26,11 +26,7 @@ export default function Home() {
   const [showForm, setShowForm] = useState(false);
   const [showCall, setShowCall] = useState(true);
 
-  // const videoConstraints = {
-  //   width: 1262,
-  //   height: 1080,
-  //   facingMode: "user",
-  // };
+   
 
   return (
     <div className="relative text-black h-screen w-screen flex flex-col justify-center items-center">
@@ -120,7 +116,8 @@ export default function Home() {
 export async function getServerSideProps({
   req,
   query: { adminId, posterId },
-}) {
+}) 
+{
   const userAgent = req.headers["user-agent"];
 
   const isMobileView = userAgent.match(
